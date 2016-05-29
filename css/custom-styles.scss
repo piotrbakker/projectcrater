@@ -1,0 +1,118 @@
+/* Colours: */
+
+$white: #FFFFFF;
+$alabaster: #FAFAFA;
+$wild-sand: #F4F4F4;
+$mercury: #E5E5E5;
+$alto: #DBDBDB;
+$silver-chalice: #ACACAC;
+$grey: #808080;
+$mine-shaft: #323232;
+$astral: #327DA0;
+
+/* Mixins */
+
+@mixin all-text {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+@mixin all-caps {
+	letter-spacing: normal;
+}
+
+@mixin sans-serif {
+	@include all-text;
+	font-family: "aktiv-grotesk", sans-serif;
+}
+
+@mixin serif {
+	@include all-text;
+	font-family: "freight-text-pro", Georgia, serif;
+}
+
+@mixin header-1 {
+	@include sans-serif;
+	text-transform: uppercase;
+	font-size: 64px;
+	font-weight: 900;
+	@media screen and (max-width: 640px) {
+		font-size: 32px;
+		font-weight: 900;
+	}
+}
+
+@mixin header-2 {
+	@include serif;
+	font-size: 22px;
+	font-weight: 400;
+	font-style: italic;
+	margin: 6px 0px 30px 0px;
+	@media screen and (max-width: 640px) {
+		font-size: 18px;
+		font-weight: 400;
+	}
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px
+}
+
+.vertical-center:before {    /* create a full-height inline block pseudo=element */
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;    /* vertical alignment of the inline element */
+  height: 100%;
+}
+
+.vertical-center > .container {
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+  .vertical-center:before {
+	height: auto;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}
+
+.white-bg {
+	background: $white;
+	
+	h1 {
+		@include header-1;
+		color: $mine-shaft;
+	}
+
+	h2 {
+		@include header-2;
+		color: $mine-shaft;	
+	}
+}
+
+.black-bg {
+	background: $mine-shaft;
+	
+	h1 {
+		@include header-1;
+		color: $white;
+	}
+
+	h2 {
+		@include header-2;
+		color: $white;	
+	}
+}
