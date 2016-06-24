@@ -55,13 +55,13 @@ $astral: #327DA0;
 }
 
 @mixin header-3 {
- @extend header-1;
+ @include header-1;
 		font-size: 32px;
 		font-weight: 900;
 }
 
 @mixin header-4 {
-@extend header-2;
+@include header-2;
 		font-size: 18px;
 		font-weight: 400;
 }
@@ -118,6 +118,17 @@ $astral: #327DA0;
 		@include header-2;
 		color: $mine-shaft;	
 	}
+  
+  h3 {
+		@include header-3;
+		color: $mine-shaft;	
+  }
+  
+  h4 {
+		@include header-4;
+		color: $mine-shaft;	
+  }
+  
 }
 
 .black-bg {
