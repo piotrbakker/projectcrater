@@ -59,23 +59,16 @@
     color: #2C2C2C; }
     @media screen and (max-width: 640px) {
       .white-bg h1 {
-        font-size: 32px;
-        font-weight: 900; } }
+        font-size: 32px; } }
   .white-bg h2 {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     font-family: "aktiv-grotesk", sans-serif;
     letter-spacing: normal;
     text-transform: uppercase;
-    font-size: 64px;
-    font-weight: 900;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 900;
     color: #2C2C2C; }
-    @media screen and (max-width: 640px) {
-      .white-bg h2 {
-        font-size: 32px;
-        font-weight: 900; } }
 
 .black-bg {
   background: #2C2C2C; }
@@ -103,22 +96,15 @@
     color: #FFFFFF; }
     @media screen and (max-width: 640px) {
       .black-bg h1 {
-        font-size: 32px;
-        font-weight: 900; } }
+        font-size: 32px; } }
   .black-bg h2 {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     font-family: "aktiv-grotesk", sans-serif;
     letter-spacing: normal;
     text-transform: uppercase;
-    font-size: 64px;
-    font-weight: 900;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 900;
     color: #FFFFFF; }
-    @media screen and (max-width: 640px) {
-      .black-bg h2 {
-        font-size: 32px;
-        font-weight: 900; } }
 
 /*# sourceMappingURL=custom-styles.css.map */

@@ -39,7 +39,6 @@ $color-red: #9B1F32; // img-logo, icon-live, errors
 	font-weight: 900;
 	@media screen and (max-width: 640px) {
 		font-size: 32px;
-		font-weight: 900;
 	}
 }
 
@@ -56,9 +55,10 @@ $color-red: #9B1F32; // img-logo, icon-live, errors
 }
 
 @mixin header-2 {
-@include header-1;
+  	@include sans-serif;
+    @include all-caps;
 		font-size: 18px;
-		font-weight: 400;
+		font-weight: 900;
 }
 
 .vertical-center {
