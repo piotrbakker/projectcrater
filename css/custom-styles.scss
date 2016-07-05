@@ -1,38 +1,37 @@
 /* Colours: */
 
-$color-grey-05: #F4F4F4; // Web sidebar background
-$color-grey-15: #DBDBDB; // iOS body copy dark background
-$color-grey-30: #ACACAC; // iOS hint text
-$color-grey-50: #808080; // Web header-2
-$color-grey-80: #2C2C2C; // iOS & Web headers and body copy
-$color-grey-90: #222222; // iOS dark background
+$color-grey-05: #F4F4F4;
+$color-grey-15: #DBDBDB;
+$color-grey-30: #ACACAC;
+$color-grey-50: #808080;
+$color-grey-80: #2C2C2C;
+$color-grey-90: #222222;
 $color-white: #FFFFFF;
-$color-blue: #4A90E2; // img-location
-$color-red: #9B1F32; // img-logo, icon-live, errors
+$color-blue: #4A90E2;
+$color-red: #9B1F32; 
 
 /* Mixins */
 
+//Text
 @mixin all-text {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 }
-
 @mixin all-caps {
 	letter-spacing: normal;
   text-transform: uppercase;
 }
-
 @mixin sans-serif {
 	@include all-text;
 	font-family: "aktiv-grotesk", sans-serif;
 }
-
 @mixin serif {
 	@include all-text;
 	font-family: "freight-text-pro", Georgia, serif;
 }
 
-@mixin header-1 {
+h1 {
+  color: $color-grey-90;
 	@include sans-serif;
 	@include all-caps;
 	font-size: 64px;
@@ -42,7 +41,15 @@ $color-red: #9B1F32; // img-logo, icon-live, errors
 	}
 }
 
-@mixin paragraph {
+h2 {
+    color: $color-grey-90;
+  	@include sans-serif;
+    @include all-caps;
+		font-size: 18px;
+		font-weight: 900;
+}
+
+p {
 	@include serif;
 	font-size: 22px;
 	font-weight: 400;
@@ -54,87 +61,31 @@ $color-red: #9B1F32; // img-logo, icon-live, errors
 	}
 }
 
-@mixin header-2 {
-  	@include sans-serif;
-    @include all-caps;
-		font-size: 18px;
-		font-weight: 900;
+.backround-white {
+	background: $color-white;
+}
+.background-black {
+	background: $color-grey-90;
+  p {
+    color: $color-white;
+  }
+	h1 {
+		color: $color-white;
+	}
+	h2 {
+		color: $color-white;	
+	}
 }
 
+// Layout
 .vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
+  min-height: 100%;  // Fallback for browsers do NOT support vh unit
+  min-height: 100vh; // These two lines are counted as one :-)
   display: flex;
   align-items: center;
-  margin-bottom: 0px
-}
-
-.vertical-center:before {    /* create a full-height inline block pseudo=element */
-  content: " ";
-  display: inline-block;
-  vertical-align: middle;    /* vertical alignment of the inline element */
-  height: 100%;
-}
-
-.vertical-center > .container {
-  max-width: 100%;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-@media screen and (max-width: 768px) {
-  .vertical-center:before {
-	height: auto;
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-	.container {
-		margin-left: 16px;
-		margin-right: 16px;
-	}
 }
 
 .header {
   border-bottom: 1px solid $color-grey-30;
   margin-bottom: 32px;
-}
-
-.white-bg {
-	background: $color-white;
-  
-  p {
-    @include paragraph;
-  }
-	
-	h1 {
-		@include header-1;
-		color: $color-grey-80;
-	}
-
-	h2 {
-		@include header-2;
-		color: $color-grey-80;	
-	}
-  
-}
-
-.black-bg {
-	background: $color-grey-80;
-  
-  p {
-    @include paragraph;
-    color: $color-white;
-  }
-	
-	h1 {
-		@include header-1;
-		color: $color-white;
-	}
-
-	h2 {
-		@include header-2;
-		color: $color-white;	
-	}
 }

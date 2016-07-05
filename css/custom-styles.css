@@ -1,110 +1,61 @@
 /* Colours: */
 /* Mixins */
+h1 {
+  color: #222222;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "aktiv-grotesk", sans-serif;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  font-size: 64px;
+  font-weight: 900; }
+  @media screen and (max-width: 640px) {
+    h1 {
+      font-size: 32px; } }
+
+h2 {
+  color: #222222;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "aktiv-grotesk", sans-serif;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 900; }
+
+p {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "freight-text-pro", Georgia, serif;
+  font-size: 22px;
+  font-weight: 400;
+  font-style: italic;
+  margin: 6px 0px 32px 0px; }
+  @media screen and (max-width: 640px) {
+    p {
+      font-size: 18px;
+      font-weight: 400; } }
+
+.backround-white {
+  background: #FFFFFF; }
+
+.background-black {
+  background: #222222; }
+  .background-black p {
+    color: #FFFFFF; }
+  .background-black h1 {
+    color: #FFFFFF; }
+  .background-black h2 {
+    color: #FFFFFF; }
+
 .vertical-center {
   min-height: 100%;
-  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh;
-  /* These two lines are counted as one :-)       */
   display: flex;
-  align-items: center;
-  margin-bottom: 0px; }
+  align-items: center; }
 
-.vertical-center:before {
-  /* create a full-height inline block pseudo=element */
-  content: " ";
-  display: inline-block;
-  vertical-align: middle;
-  /* vertical alignment of the inline element */
-  height: 100%; }
-
-.vertical-center > .container {
-  max-width: 100%;
-  display: inline-block;
-  vertical-align: middle; }
-
-@media screen and (max-width: 768px) {
-  .vertical-center:before {
-    height: auto;
-    display: none; } }
-@media screen and (max-width: 768px) {
-  .container {
-    margin-left: 16px;
-    margin-right: 16px; } }
 .header {
   border-bottom: 1px solid #ACACAC;
   margin-bottom: 32px; }
-
-.white-bg {
-  background: #FFFFFF; }
-  .white-bg p {
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    font-family: "freight-text-pro", Georgia, serif;
-    font-size: 22px;
-    font-weight: 400;
-    font-style: italic;
-    margin: 6px 0px 32px 0px; }
-    @media screen and (max-width: 640px) {
-      .white-bg p {
-        font-size: 18px;
-        font-weight: 400; } }
-  .white-bg h1 {
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    font-family: "aktiv-grotesk", sans-serif;
-    letter-spacing: normal;
-    text-transform: uppercase;
-    font-size: 64px;
-    font-weight: 900;
-    color: #2C2C2C; }
-    @media screen and (max-width: 640px) {
-      .white-bg h1 {
-        font-size: 32px; } }
-  .white-bg h2 {
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    font-family: "aktiv-grotesk", sans-serif;
-    letter-spacing: normal;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 900;
-    color: #2C2C2C; }
-
-.black-bg {
-  background: #2C2C2C; }
-  .black-bg p {
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    font-family: "freight-text-pro", Georgia, serif;
-    font-size: 22px;
-    font-weight: 400;
-    font-style: italic;
-    margin: 6px 0px 32px 0px;
-    color: #FFFFFF; }
-    @media screen and (max-width: 640px) {
-      .black-bg p {
-        font-size: 18px;
-        font-weight: 400; } }
-  .black-bg h1 {
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    font-family: "aktiv-grotesk", sans-serif;
-    letter-spacing: normal;
-    text-transform: uppercase;
-    font-size: 64px;
-    font-weight: 900;
-    color: #FFFFFF; }
-    @media screen and (max-width: 640px) {
-      .black-bg h1 {
-        font-size: 32px; } }
-  .black-bg h2 {
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    font-family: "aktiv-grotesk", sans-serif;
-    letter-spacing: normal;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 900;
-    color: #FFFFFF; }
 
 /*# sourceMappingURL=custom-styles.css.map */
