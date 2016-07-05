@@ -1,5 +1,4 @@
 /* Colours: */
-
 $color-grey-05: #F4F4F4;
 $color-grey-15: #DBDBDB;
 $color-grey-30: #ACACAC;
@@ -11,8 +10,6 @@ $color-blue: #4A90E2;
 $color-red: #9B1F32; 
 
 /* Mixins */
-
-//Text
 @mixin all-text {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
@@ -30,6 +27,7 @@ $color-red: #9B1F32;
 	font-family: "freight-text-pro", Georgia, serif;
 }
 
+//Text
 h1 {
   color: $color-grey-90;
 	@include sans-serif;
@@ -40,7 +38,6 @@ h1 {
 		font-size: 32px;
 	}
 }
-
 h2 {
     color: $color-grey-90;
   	@include sans-serif;
@@ -48,7 +45,6 @@ h2 {
 		font-size: 18px;
 		font-weight: 900;
 }
-
 p {
 	@include serif;
 	font-size: 22px;
@@ -61,6 +57,7 @@ p {
 	}
 }
 
+// Themes
 .backround-white {
 	background: $color-white;
 }
@@ -84,7 +81,6 @@ p {
   display: flex;
   align-items: center;
 }
-
 .calendar-header {
   border-bottom: 1px solid $color-grey-30;
   margin-bottom: 32px;
