@@ -48,14 +48,30 @@ p {
   .background-black h2 {
     color: #FFFFFF; }
 
+html, body {
+  height: 100%; }
+
 .vertical-center {
   min-height: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center; }
 
+.container {
+  padding: 0 80px 0 80px;
+  margin-left: 80px;
+  margin-right: 80px; }
+  @media screen and (max-width: 970px) {
+    .container {
+      padding: 0 16px 0 16px;
+      margin-left: 16px;
+      margin-right: 16px; } }
+
 .calendar-header {
   border-bottom: 1px solid #ACACAC;
   margin-bottom: 32px; }
+
+.calendar-overflow {
+  overflow: auto; }
 
 /*# sourceMappingURL=custom-styles.css.map */

@@ -75,13 +75,29 @@ p {
 }
 
 // Layout
+html, body {
+  height: 100%;
+}
 .vertical-center {
   min-height: 100%;  // Fallback for browsers do NOT support vh unit
   min-height: 100vh; // These two lines are counted as one :-)
   display: flex;
   align-items: center;
 }
+.container { 
+  padding: 0 80px 0 80px; // The 12 column layout is too wide and this makes it a bit more narrow.
+	margin-left: 80px;
+	margin-right: 80px;
+  @media screen and (max-width: 970px) {
+    padding: 0 16px 0 16px;
+		margin-left: 16px;
+		margin-right: 16px;
+  }
+}
 .calendar-header {
   border-bottom: 1px solid $color-grey-30;
   margin-bottom: 32px;
+}
+.calendar-overflow {
+  overflow: auto; //"If overflow is clipped, a scroll-bar should be added to see the rest of the content"
 }
