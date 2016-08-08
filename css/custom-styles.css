@@ -72,6 +72,6 @@ html, body {
   margin-bottom: 32px; }
 
 .calendar-overflow {
-  overflow: auto; }
+  overflow: scroll; }
 
 /*# sourceMappingURL=custom-styles.css.map */
