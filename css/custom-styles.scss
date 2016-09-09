@@ -22,17 +22,17 @@ $color-red: #9B1F32;
 	@include all-text;
 	font-family: "effra", sans-serif;
 }
-@mixin serif {
+@mixin monospace {
 	@include all-text;
-	font-family: "menlo", Georgia, serif;
+	font-family: Menlo, Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
 
 //Text
 h1 {
-  @include all-text;
+  @include sans-serif;
   @include all-caps;
   color: $color-grey-90;
-  font-family: Effra;
+  //font-family: Effra;
   font-weight: 800;
   font-style: inherit;
   font-size: 68px;
@@ -47,7 +47,7 @@ h1 {
   }
 }
 h2 {
-  @include all-text;
+  @include sans-serif;
   @include all-caps;
   color: $color-grey-90;
   font-family: Effra;
@@ -65,9 +65,9 @@ h2 {
   }
 }
 h3 {
-  @include all-text;
+  @include sans-serif;
   @include all-caps;
-  font-family: Effra;
+  //font-family: Effra;
   font-weight: 800;
   //font-style: inherit;
   font-size: 26px;
@@ -77,8 +77,9 @@ h3 {
 }
 
 p {
+  @include monospace;
   @include all-text;
-  font-family: menlo;
+  //font-family: menlo;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
