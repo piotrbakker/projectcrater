@@ -20,42 +20,151 @@ $color-red: #9B1F32;
 }
 @mixin sans-serif {
 	@include all-text;
-	font-family: "aktiv-grotesk", sans-serif;
+	font-family: "effra", sans-serif;
 }
 @mixin serif {
 	@include all-text;
-	font-family: "freight-text-pro", Georgia, serif;
+	font-family: "menlo", Georgia, serif;
 }
 
 //Text
 h1 {
+  @include all-text;
+  @include all-caps;
   color: $color-grey-90;
-	@include sans-serif;
-	@include all-caps;
-	font-size: 64px;
-	font-weight: 900;
-	@media screen and (max-width: 640px) {
-		font-size: 32px;
-	}
+  font-family: Effra;
+  font-weight: 800;
+  font-style: inherit;
+  font-size: 68px;
+  line-height: 96px;
+  margin-top: 32px;
+  margin-bottom: 0px;
+	@media screen and (max-width: 640px) { 
+    font-size: 42px;
+    line-height: 64px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
 }
 h2 {
-    color: $color-grey-90;
-  	@include sans-serif;
-    @include all-caps;
-		font-size: 18px;
-		font-weight: 900;
+  @include all-text;
+  @include all-caps;
+  color: $color-grey-90;
+  font-family: Effra;
+  font-weight: 800;
+  font-style: inherit;
+  font-size: 42px;
+  line-height: 64px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  @media screen and (max-width: 640px) { 
+    font-size: 26px;
+    line-height: 32px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
 }
+h3 {
+  @include all-text;
+  @include all-caps;
+  font-family: Effra;
+  font-weight: 800;
+  //font-style: inherit;
+  font-size: 26px;
+  line-height: 32px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
 p {
-	@include serif;
-	font-size: 22px;
-	font-weight: 400;
-	font-style: italic;
-	margin: 6px 0px 32px 0px;
-	@media screen and (max-width: 640px) {
-		font-size: 18px;
-		font-weight: 400;
-	}
+  @include all-text;
+  font-family: menlo;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
 }
+
+a {
+  .button {
+    @include all-text;
+    @include all-caps;
+    display: inline-block;
+    background: #FFFFFF;
+    border: 4px solid #222222;
+    border-radius: 40px;
+    font-family: Effra-Heavy;
+    font-size: 16px;
+    color: $color-grey-90;
+    line-height: 32px;
+    padding: 0px 42px 0px 42px;
+    margin-bottom: 80px;
+  	&:hover{
+  		transition: 0.3s ease;
+      color: $color-white;
+      background: $color-grey-90;;
+      text-decoration: none;
+  	}	
+  }
+}
+
+li > a {
+	color: $color-grey-90;
+  text-decoration: underline;
+	&:hover{
+		transition: 0.3s ease;
+    color: $color-blue;
+    text-decoration: none;
+	}
+  
+}
+
+ul {
+  @extend p;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container-headline {
+  margin: 80px 0 0 0;
+}
+
+.container-title {
+  margin: 40px 0 0 0;
+}
+
+.container-content {
+  margin: 80px 0 80px 0;
+}
+
+.hint {
+  @include all-text;
+  color: $color-grey-30;
+}
+
+.name-badge {
+  margin: 24px 0 0 0;
+}
+
+.margin-p {
+  margin: 40px 0 0 0;
+}
+
+.size-img {
+  width: 120px;
+  height: 120px;
+  @media screen and (max-width: 640px) { 
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.col-sm-2 {
+  .size-img {
+    background-color: $color-grey-05;
+  }
+}   
+
 
 // Themes
 .backround-white {
@@ -84,7 +193,7 @@ html, body {
   display: flex;
   align-items: center;
 }
-.container { 
+/* .container { 
   padding: 0 80px 0 80px; // The 12 column layout is too wide and this makes it a bit more narrow.
 	margin-left: 80px;
 	margin-right: 80px;
@@ -93,7 +202,7 @@ html, body {
 		margin-left: 16px;
 		margin-right: 16px;
   }
-}
+} */
 .calendar-header {
   border-bottom: 1px solid $color-grey-30;
   margin-bottom: 32px;
