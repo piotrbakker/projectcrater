@@ -50,7 +50,7 @@ h2 {
   @include sans-serif;
   @include all-caps;
   color: $color-grey-90;
-  font-family: Effra;
+  //font-family: Effra;
   font-weight: 800;
   font-style: inherit;
   font-size: 42px;
@@ -87,7 +87,7 @@ p {
 
 a {
   .button {
-    @include all-text;
+    @include sans-serif;
     @include all-caps;
     display: inline-block;
     background: #FFFFFF;

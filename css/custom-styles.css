@@ -27,7 +27,6 @@ h2 {
   letter-spacing: normal;
   text-transform: uppercase;
   color: #222222;
-  font-family: Effra;
   font-weight: 800;
   font-style: inherit;
   font-size: 42px;
@@ -66,6 +65,7 @@ p, ul {
 a .button {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  font-family: "effra", sans-serif;
   letter-spacing: normal;
   text-transform: uppercase;
   display: inline-block;
