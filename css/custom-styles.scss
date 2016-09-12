@@ -27,7 +27,7 @@ $color-red: #9B1F32;
 	font-family: Menlo, Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
 
-//Text
+// Text
 h1 {
   @include sans-serif;
   @include all-caps;
@@ -75,7 +75,6 @@ h3 {
   margin-top: 32px;
   margin-bottom: 16px;
 }
-
 p {
   @include monospace;
   @include all-text;
@@ -84,7 +83,6 @@ p {
   font-size: 16px;
   line-height: 32px;
 }
-
 a {
   .button {
     @include sans-serif;
@@ -107,7 +105,6 @@ a {
   	}	
   }
 }
-
 li > a {
 	color: $color-grey-90;
   text-decoration: underline;
@@ -117,7 +114,6 @@ li > a {
     text-decoration: none;
 	}
 }
-
 ul {
   @extend p;
   list-style: none;
@@ -125,31 +121,26 @@ ul {
   margin: 0;
 }
 
+//Margins
 .container-headline {
   margin: 80px 0 0 0;
 }
-
 .container-title {
   margin: 40px 0 0 0;
 }
-
 .container-content {
   margin: 80px 0 80px 0;
 }
-
 .hint {
   @include all-text;
   color: $color-grey-30;
 }
-
 .name-badge {
   margin: 24px 0 0 0;
 }
-
 .margin-p {
   margin: 40px 0 0 0;
 }
-
 .size-img {
   width: 120px;
   height: 120px;
@@ -158,13 +149,11 @@ ul {
     height: 80px;
   }
 }
-
-.col-sm-2, .col-xs-4, .col-xs-5 {
+.col-sm-2, .col-xs-4, .col-xs-5 { // Only for the mockups, to show background without images
   .size-img {
     background-color: $color-grey-05;
   }
-}   
-
+}
 
 // Themes
 .background-white {
@@ -205,16 +194,6 @@ html, body {
   display: flex;
   align-items: center;
 }
-/* .container { 
-  padding: 0 80px 0 80px; // The 12 column layout is too wide and this makes it a bit more narrow.
-	margin-left: 80px;
-	margin-right: 80px;
-  @media screen and (max-width: 970px) {
-    padding: 0 16px 0 16px;
-		margin-left: 16px;
-		margin-right: 16px;
-  }
-} */
 .calendar-header {
   border-bottom: 1px solid $color-grey-30;
   margin-bottom: 32px;
