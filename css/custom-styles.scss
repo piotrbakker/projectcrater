@@ -116,7 +116,6 @@ li > a {
     color: $color-blue;
     text-decoration: none;
 	}
-  
 }
 
 ul {
@@ -154,13 +153,13 @@ ul {
 .size-img {
   width: 120px;
   height: 120px;
-  @media screen and (max-width: 640px) { 
+  @media screen and (max-width: 992px) { 
     width: 80px;
     height: 80px;
   }
 }
 
-.col-sm-2 {
+.col-sm-2, .col-xs-4, .col-xs-5 {
   .size-img {
     background-color: $color-grey-05;
   }
@@ -168,21 +167,33 @@ ul {
 
 
 // Themes
-.backround-white {
+.background-white {
 	background: $color-white;
+}
+.background-grey {
+	background: $color-grey-05;
 }
 .background-black {
 	background: $color-grey-90;
-  p {
-    color: $color-white;
-  }
 	h1 {
 		color: $color-white;
 	}
 	h2 {
 		color: $color-white;	
 	}
+  p {
+    color: $color-white;
+  }
+  li > a {
+  	color: $color-white;
+  	&:hover{
+  		transition: 0.3s ease;
+      color: $color-grey-30;
+      text-decoration: none;
+  	}
+  }
 }
+
 
 // Layout
 html, body {
