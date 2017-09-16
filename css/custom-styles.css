@@ -123,8 +123,16 @@ ul {
   height: 120px; }
   @media screen and (max-width: 992px) {
     .size-img {
-      width: 80px;
-      height: 80px; } }
+      width: 96px;
+      height: 96px; } }
+
+.rounded-circle {
+  width: 160px;
+  height: 160px; }
+  @media screen and (max-width: 992px) {
+    .rounded-circle {
+      width: 96px;
+      height: 96px; } }
 
 .col-sm-2 .size-img, .col-xs-4 .size-img, .col-xs-5 .size-img {
   background-color: #F4F4F4; }

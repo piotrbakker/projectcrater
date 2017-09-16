@@ -8,7 +8,7 @@ $color-grey-90: #222222;
 $color-black: black;
 $color-white: #FFFFFF;
 $color-blue: #4A90E2;
-$color-red: #9B1F32; 
+$color-red: #9B1F32;
 
 /* Mixins */
 @mixin all-text {
@@ -40,7 +40,7 @@ h1 {
   line-height: 96px;
   margin-top: 32px;
   margin-bottom: 0px;
-	@media screen and (max-width: 640px) { 
+	@media screen and (max-width: 640px) {
     font-size: 42px;
     line-height: 64px;
     margin-top: 32px;
@@ -56,7 +56,7 @@ h2 {
   line-height: 64px;
   margin-top: 32px;
   margin-bottom: 32px;
-  @media screen and (max-width: 640px) { 
+  @media screen and (max-width: 640px) {
     font-size: 26px;
     line-height: 32px;
     margin-top: 32px;
@@ -100,7 +100,7 @@ a {
       color: $color-white;
       background: $color-black;
       text-decoration: none;
-  	}	
+  	}
   }
 }
 li > a {
@@ -142,10 +142,23 @@ ul {
 .size-img {
   width: 120px;
   height: 120px;
-  @media screen and (max-width: 992px) { 
-    width: 80px;
-    height: 80px;
+  @media screen and (max-width: 992px) {
+    width: 96px;
+    height: 96px;
   }
+}
+
+.rounded-circle {
+  width: 160px;
+  height: 160px;
+  @media screen and (max-width: 992px) {
+    width: 96px;
+    height: 96px;
+  }
+}
+
+.rounded-circle {
+	// border: 8px solid $color-grey-05;
 }
 .col-sm-2, .col-xs-4, .col-xs-5 { // Only for the mockups, to show background without images
   .size-img {
@@ -166,7 +179,7 @@ ul {
 		color: $color-white;
 	}
 	h2 {
-		color: $color-white;	
+		color: $color-white;
 	}
   p {
     color: $color-white;
